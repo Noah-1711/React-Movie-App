@@ -1,0 +1,355 @@
+.searchcontainer {
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.inputcontainer {
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.searchinput {
+    margin-top: 2rem;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.inputcontainer select {
+    width: 8%;
+    height: 75%;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.inputcontainer input {
+    width: 40%;
+    height: 75%;
+    font-size: 1.1rem;
+    outline: none;
+
+}
+
+.inputcontainer button {
+    width: 5%;
+    height: 75%;
+}
+
+.searchbuttons {
+    width: 35%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+
+
+}
+
+.searchbuttons label {
+    font-size: 1.2rem;
+}
+
+.searchbuttons select {
+    width: 30%;
+    height: 75%;
+    font-size: 1.1rem;
+}
+
+/* .buttons{
+width: 40%;
+height: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+} */
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3d435d;
+    width: 40%;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: inset 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
+    border: 2px gray solid;
+}
+
+input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+.buttons label {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: linear 0.2s;
+    color: white;
+}
+
+input[type="radio"]:checked+label {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* button{
+    width: 50%;
+    height: 100%;
+} */
+
+hr {
+    width: 100%;
+    border: 1px solid rgba(234, 237, 255, .08);
+}
+
+.result {
+    /* border: 2px black solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards-container {
+    /* border: 2px green solid; */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards-container a{
+    text-decoration: none;
+    color: white;
+
+}
+
+@media only screen and (max-width:480px) {
+
+    .searchcontainer {
+        justify-content: center;
+
+    }
+
+    .searchbuttons {
+        width: 90%;
+
+
+    }
+
+    .inputcontainer select {
+        width: 20%;
+        height: 70%;
+    }
+
+    .inputcontainer input {
+        width: 55%;
+        height: 70%;
+    }
+
+    .inputcontainer button {
+        width: 10%;
+        height: 70%;
+    }
+
+    .imagesdetails {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .cardsdetails {
+        width: 50%;
+        height: 100%;
+    }
+
+    .relase {
+        width: 60%;
+        height: 30%;
+
+
+    }
+
+    .title {
+        width: 100%;
+        height: 23%;
+
+
+    }
+
+    .title h2 {
+        font-size: .9rem;
+
+
+    }
+
+
+    .castcontanier {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:650px) {
+
+    .searchcontainer {
+        justify-content: center;
+
+    }
+
+    .searchbuttons {
+        width: 80%;
+
+
+    }
+
+    .inputcontainer select {
+        width: 20%;
+        height: 70%;
+    }
+
+    .inputcontainer input {
+        width: 55%;
+        height: 70%;
+    }
+
+    .inputcontainer button {
+        width: 10%;
+        height: 70%;
+    }
+
+    .imagesdetails {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .cardsdetails {
+        width: 50%;
+        height: 70%;
+    }
+
+    .relase {
+        width: 60%;
+        height: 30%;
+
+
+    }
+
+    .title {
+        width: 80%;
+        height: 25%;
+
+
+    }
+
+    .title h2 {
+        font-size: 1.3rem;
+
+
+    }
+
+
+    .castcontanier {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:651px) and (max-width:1020px) {
+ 
+
+    .searchbuttons {
+        width: 60%;
+
+
+    }
+
+    .inputcontainer select {
+        width: 20%;
+        height: 70%;
+    }
+
+    .inputcontainer input {
+        width: 55%;
+        height: 70%;
+    }
+
+    .inputcontainer button {
+        width: 10%;
+        height: 70%;
+    }
+
+    .imagesdetails {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .cardsdetails {
+        width: 50%;
+        height: 70%;
+    }
+
+    .relase {
+        width: 60%;
+        height: 30%;
+
+
+    }
+
+    .title {
+        width: 80%;
+        height: 25%;
+
+
+    }
+
+    .title h2 {
+        font-size: 1.3rem;
+
+
+    }
+
+
+    .castcontanier {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
