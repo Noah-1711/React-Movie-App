@@ -15,7 +15,11 @@ Features
 
 - To get started with the application, you can clone the repository and install the required dependencies using **npm install**. Once installed, run **npm start** to start the development server and view the application in your web browser.
 
+## Hosted Link :- 
+**https://react-movie-app-swart.vercel.app/**
 
+## Video Explanation
+ **https://drive.google.com/file/d/1oKtjmpmAJGf2eMgeruqz4RKo1u7NjiUm/edit**
 ## License
 
 -The React-based Movie Application is open-source software licensed under the MIT License.

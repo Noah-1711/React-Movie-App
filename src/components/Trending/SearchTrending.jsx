@@ -17,9 +17,7 @@ export const SearchTrending = () => {
 
         const Trendingdata = async () => {
             const res = await fetch(`https://api.themoviedb.org/3/trending/${radiovalue}/${dropvalue}?api_key=5eafbd3ac98d48f8172fb4929b67f1a1`)
-            // console.log(res);
             const data = await res.json()
-            // console.log(data.results)
             setData(data.results)
         }
 
@@ -28,16 +26,16 @@ export const SearchTrending = () => {
             const data = await res.json()
             console.log(data.genres)
             setGenredata(data.genres)
-            }
-    
+        }
+
         Trendingdata()
         Genredata()
 
 
     }, [dropvalue, radiovalue])
 
-  
-   
+
+
 
 
     return (
@@ -78,7 +76,7 @@ export const SearchTrending = () => {
                         data.map((ele) => {
                             console.log(ele)
                             return <Link to={`${ele.media_type}/${ele.id}`}>
-                            <Cards image={`https://image.tmdb.org/t/p/w154${ele.poster_path}`} moviename={ele.title}  tvname={ele.name}  moviedate={ele.release_date} tvdate={ele.first_air_date} votes={ele.vote_average } genre={ele.genre_ids } generedata={generedata}/>
+                                <Cards image={`https://image.tmdb.org/t/p/w154${ele.poster_path}`} moviename={ele.title} tvname={ele.name} moviedate={ele.release_date} tvdate={ele.first_air_date} votes={ele.vote_average} genre={ele.genre_ids} generedata={generedata} />
                             </Link>
                         })
 
