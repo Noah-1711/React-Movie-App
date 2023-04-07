@@ -19,7 +19,7 @@ export const Cards = (props) => {
             <h3>{props && (props.moviename || props.tvname)}</h3>
             {/* <small>{ newgenre.name && newgenre.name}</small> */}
             <small> Action | Drama</small>
-            <p>{props && ((props.moviedate|| props.tvdate).slice(0,4))}</p>
+            <p>{props && ((props.moviedate || props.tvdate))}</p>
           </div>
           <div class="votes">
             {props && ((props.votes *10).toFixed(1))} %
