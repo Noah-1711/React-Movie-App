@@ -49,15 +49,21 @@
 .votes {
     width: 42px;
     height: 42px;
-    border: 3px hsl(102, 65%, 60%) solid;
+    /* border: 3px hsl(102, 65%, 60%) solid; */
     position: absolute;
     top: -15px;
     right: -15px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
 
 }
+
+
+.progressbar{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+
+}
+

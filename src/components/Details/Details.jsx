@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './Details.css'
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 
 export const Details = () => {
@@ -54,8 +56,24 @@ export const Details = () => {
                         <img src={`https://image.tmdb.org/t/p/w154${moviedetails.poster_path}`} alt="" />
                         <div className="cardsdetails">
                             <div className="percent">
-                                <p>  {moviedetails && (moviedetails.vote_average * 10).toFixed(1)}%
-                                </p>
+                            <CircularProgressbar
+            className="progressbar"
+            value={moviedetails && ((moviedetails.vote_average * 10).toFixed(1))}
+            text={`${moviedetails && ((moviedetails.vote_average  * 10).toFixed(1))}%`}
+            styles={{
+              path: {
+                stroke: 'hsl(102, 65%, 60%)',
+              },
+              text: {
+                fill: 'hsl(102, 65%, 60%)',
+              },
+              text: {
+                fill: 'white',
+                // Text size
+                fontSize: '24px',
+              },
+            }}
+          />
                             </div>
                             <div className="relase">
                                 <p>{moviedetails && (moviedetails.release_date || moviedetails.first_air_date)}</p>
